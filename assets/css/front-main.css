@@ -1,0 +1,66 @@
+a {
+	color: black;
+	transition: .3s all;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #292929;
+}
+
+.card__body {
+	height: 270px;
+	overflow: hidden;
+}
+
+.card-image-wrapper {
+	height: 300px;
+	overflow: hidden;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.slide-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	width: 57px;
+	height: 57px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.prev-arrow {
+	left: -60px;
+	background-image: url('../../assets/icons/left.svg');
+}
+
+@media only screen and (max-width : 992px) {
+  .prev-arrow {
+    top: auto;
+    bottom: 2%;
+  }
+}
+
+.next-arrow {
+	right: -60px;
+	background-image: url('../../assets/icons/right.svg');
+}
+
+@media only screen and (max-width : 992px) {
+  .next-arrow {
+    top: auto;
+    bottom: 2%;
+  }
+}
